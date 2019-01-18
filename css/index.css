@@ -174,6 +174,7 @@ nav {
   justify-content: space-between;
 }
 nav a {
+  color: black;
   display: flex;
   align-items: flex-end;
   font-size: 1.4rem;
@@ -243,15 +244,7 @@ nav a {
   width: 30%;
   margin-bottom: 30px;
 }
-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 30px 0;
-  border-bottom: 2px dashed silver;
-}
-.btn {
+.home .btn {
   width: 85%;
   border: 1px solid #17A2B8;
   background-color: #17A2B8;
@@ -261,23 +254,79 @@ header {
   color: white;
   font-size: 1.6rem;
 }
-.btn:hover {
+.home .btn:hover {
   background-color: #0f6674;
 }
-.intro-section {
+.home .intro-section {
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 20px;
 }
-.intro-section .bus-img {
+.home .intro-section .bus-img {
   margin-bottom: 20px;
 }
 @media (max-width: 500px) {
-  header {
+  .home .intro-section div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  header h1 {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .home .content-section .text-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .home .content-section .text-content p {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+header {
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 2px dashed silver;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  header #divhed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header #divhed h1 {
     margin-bottom: 20px;
   }
 }
